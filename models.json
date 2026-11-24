@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "updated_utc": "2026-11-23T20:00:00Z",
+  "source": "bundled",
+  "refresh_url": "https://raw.githubusercontent.com/MobileDevCLI/mcli-models/main/models.json",
+  "providers": {
+    "claude": {
+      "default": "claude-opus-4-7",
+      "env_var": "ANTHROPIC_MODEL",
+      "notes": "backend=claude-run routes through the pinned 2.1.112 CLI (allowlist-filtered); backend=mcli-fable routes direct-to-API for post-pin models.",
+      "models": [
+        {
+          "id": "claude-opus-4-7",
+          "name": "Opus 4.7",
+          "backend": "claude-run"
+        },
+        {
+          "id": "claude-opus-4-6",
+          "name": "Opus 4.6",
+          "backend": "claude-run"
+        },
+        {
+          "id": "claude-opus-4-5",
+          "name": "Opus 4.5",
+          "backend": "claude-run"
+        },
+        {
+          "id": "claude-sonnet-4-6",
+          "name": "Sonnet 4.6",
+          "backend": "claude-run"
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "name": "Sonnet 4.5",
+          "backend": "claude-run"
+        },
+        {
+          "id": "claude-haiku-4-5-20251001",
+          "name": "Haiku 4.5",
+          "backend": "claude-run"
+        },
+        {
+          "id": "claude-fable-5-1",
+          "name": "Fable 5.1",
+          "backend": "mcli-fable"
+        },
+        {
+          "id": "claude-fable-5-2",
+          "name": "Fable 5.2",
+          "backend": "mcli-fable"
+        },
+        {
+          "id": "claude-opus-5-5",
+          "name": "Opus 5.5",
+          "backend": "mcli-fable"
+        },
+        {
+          "id": "claude-opus-6-0",
+          "name": "Opus 6.0",
+          "backend": "mcli-fable"
+        }
+      ]
+    },
+    "gemini": {
+      "default": "gemini-2.0-flash-exp",
+      "env_var": "GEMINI_MODEL",
+      "notes": "backend=gemini is the pinned 0.38.0 CLI; it reads $GEMINI_MODEL at launch.",
+      "models": [
+        {
+          "id": "gemini-2.0-flash-exp",
+          "name": "Gemini 2.0 Flash",
+          "backend": "gemini"
+        },
+        {
+          "id": "gemini-1.5-pro",
+          "name": "Gemini 1.5 Pro",
+          "backend": "gemini"
+        },
+        {
+          "id": "gemini-1.5-flash",
+          "name": "Gemini 1.5 Flash",
+          "backend": "gemini"
+        }
+      ]
+    },
+    "codex": {
+      "default": "gpt-5",
+      "env_var": "OPENAI_MODEL",
+      "notes": "backend=codex-run is the OpenAI Codex CLI wrapper.",
+      "models": [
+        {
+          "id": "gpt-5",
+          "name": "GPT-5",
+          "backend": "codex-run"
+        },
+        {
+          "id": "gpt-5-mini",
+          "name": "GPT-5 mini",
+          "backend": "codex-run"
+        },
+        {
+          "id": "gpt-4.1",
+          "name": "GPT-4.1",
+          "backend": "codex-run"
+        }
+      ]
+    },
+    "grok": {
+      "default": "grok-4",
+      "env_var": "XAI_MODEL",
+      "notes": "backend=grok-run is the xAI Grok CLI wrapper.",
+      "models": [
+        {
+          "id": "grok-4",
+          "name": "Grok 4",
+          "backend": "grok-run"
+        },
+        {
+          "id": "grok-3",
+          "name": "Grok 3",
+          "backend": "grok-run"
+        }
+      ]
+    }
+  }
+}
